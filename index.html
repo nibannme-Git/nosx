@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>nibannme OS X HP</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    /* 上部ヘッダー */
+    header {
+        background: #222;
+        color: white;
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+    }
+
+    /* コンテンツ部分 */
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        border-left: 5px solid #444;
+        padding-left: 10px;
+    }
+
+    ul {
+        line-height: 1.8;
+    }
+
+    /* スクリーンショットギャラリー */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .gallery img {
+        width: 280px;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+
+    /* 右下ロゴスペース */
+    .logo-box {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 150px;
+        height: 150px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .logo-box img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    nibannme OS X HP
+</header>
+
+<div class="container">
+    <h2>概要</h2>
+    <p>
+        nibannme OS X は、Batch と Python を組み合わせて構築された OS 風の Live 環境です。  
+        起動画面、GRUB 風メニュー、Live DOS、インストーラーなどを備え、  
+        実際の OS のような体験ができるプロジェクトです。
+    </p>
+
+    <h2>特徴</h2>
+    <ul>
+        <li>Batch ベースの起動画面</li>
+        <li>Python による GRUB 風ブートメニュー</li>
+        <li>Live DOS 環境での操作</li>
+        <li>インストーラー風 UI</li>
+        <li>日本語対応</li>
+        <li>軽量でシンプルな構成</li>
+    </ul>
+
+    <h2>ダウンロード</h2>
+    <p>
+        GitHub のリポジトリから入手できます。  
+        <br>
+        <a href="https://github.com/あなたのユーザー名/nibannme-OS-X" target="_blank">
+            → GitHub リポジトリへ
+        </a>
+    </p>
+
+    <h2>スクリーンショット</h2>
+    <p>nibannme OS X の画面例を掲載しています。</p>
+
+    <!-- ギャラリー（3枚配置済み） -->
+    <div class="gallery">
+        <img src="assets/screen1.png" alt="screenshot1">
+        <img src="assets/screen2.png" alt="screenshot2">
+        <img src="assets/screen3.png" alt="screenshot3">
+    </div>
+
+</div>
+
+<!-- 右下ロゴスペース（タグ付き） -->
+<div class="logo-box">
+    <img src="assets/logo.png" alt="logo">
+</div>
+
+</body>
+</html>
